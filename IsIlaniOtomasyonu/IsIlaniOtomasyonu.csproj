@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59497776-22DD-479F-A402-1555D56BA43B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IsIlaniOtomasyonu</RootNamespace>
+    <AssemblyName>IsIlaniOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaGiris.Designer.cs">
+      <DependentUpon>AnaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiyatlandirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiyatlandirma.Designer.cs">
+      <DependentUpon>Fiyatlandirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girisler\ArayanGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girisler\ArayanGiris.Designer.cs">
+      <DependentUpon>ArayanGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girisler\IsVerenGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girisler\IsVerenGiris.Designer.cs">
+      <DependentUpon>IsVerenGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girisler\YoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girisler\YoneticiGiris.Designer.cs">
+      <DependentUpon>YoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HizmetBilgi\Hizmet.cs" />
+    <Compile Include="HizmetBilgi\HizmetKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HizmetBilgi\HizmetKayit.Designer.cs">
+      <DependentUpon>HizmetKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HizmetBilgi\HizmetKod.cs" />
+    <Compile Include="IsArayan\Arayan.cs" />
+    <Compile Include="IsArayan\IsArayanBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsArayan\IsArayanBasvuru.Designer.cs">
+      <DependentUpon>IsArayanBasvuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsArayan\IsArayanCv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsArayan\IsArayanCv.Designer.cs">
+      <DependentUpon>IsArayanCv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsArayan\IsArayanKod.cs" />
+    <Compile Include="IsBilgiler\Is.cs" />
+    <Compile Include="IsBilgiler\IsKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBilgiler\IsKayit.Designer.cs">
+      <DependentUpon>IsKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBilgiler\IsKod.cs" />
+    <Compile Include="Is_Veren\BasvuranBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Is_Veren\BasvuranBilgi.Designer.cs">
+      <DependentUpon>BasvuranBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Is_Veren\IsVeren.cs" />
+    <Compile Include="Is_Veren\IsVerenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Is_Veren\IsVerenKayit.Designer.cs">
+      <DependentUpon>IsVerenKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Is_Veren\IsVerenKod.cs" />
+    <Compile Include="MeslekBilgi\Meslek.cs" />
+    <Compile Include="MeslekBilgi\MeslekKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeslekBilgi\MeslekKayit.Designer.cs">
+      <DependentUpon>MeslekKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeslekBilgi\MeslekKod.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SektorBilgi\Sektor.cs" />
+    <Compile Include="SektorBilgi\SektorKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SektorBilgi\SektorKayit.Designer.cs">
+      <DependentUpon>SektorKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SektorBilgi\SektorKod.cs" />
+    <Compile Include="Yonetici\Yonetici.cs" />
+    <Compile Include="Yonetici\YoneticiIsler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici\YoneticiIsler.Designer.cs">
+      <DependentUpon>YoneticiIsler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici\YoneticiKod.cs" />
+    <EmbeddedResource Include="AnaGiris.resx">
+      <DependentUpon>AnaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiyatlandirma.resx">
+      <DependentUpon>Fiyatlandirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girisler\ArayanGiris.resx">
+      <DependentUpon>ArayanGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girisler\IsVerenGiris.resx">
+      <DependentUpon>IsVerenGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girisler\YoneticiGiris.resx">
+      <DependentUpon>YoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HizmetBilgi\HizmetKayit.resx">
+      <DependentUpon>HizmetKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsArayan\IsArayanBasvuru.resx">
+      <DependentUpon>IsArayanBasvuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsArayan\IsArayanCv.resx">
+      <DependentUpon>IsArayanCv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBilgiler\IsKayit.resx">
+      <DependentUpon>IsKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Is_Veren\BasvuranBilgi.resx">
+      <DependentUpon>BasvuranBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Is_Veren\IsVerenKayit.resx">
+      <DependentUpon>IsVerenKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeslekBilgi\MeslekKayit.resx">
+      <DependentUpon>MeslekKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SektorBilgi\SektorKayit.resx">
+      <DependentUpon>SektorKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici\YoneticiIsler.resx">
+      <DependentUpon>YoneticiIsler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply-message %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gecis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply-message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka plan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sat.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eği.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paket.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
